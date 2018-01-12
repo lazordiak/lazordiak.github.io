@@ -18,10 +18,10 @@ canvas {
 
 h1 {
 	margin: auto;
-	font-size: 300%;
+	font-size: 250%;
     width: 70%;
     padding: 100px 0;
-    font-family:Palatino, URW Palladio L, serif;
+    font-family: 'Jura', sans-serif;
     text-align: center;
     color: #000000;
 }
