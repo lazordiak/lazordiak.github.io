@@ -34,6 +34,12 @@ h1{
 	text-align: center;
 }
 
+.centered{
+	display:table-cell; 
+	vertical-align:middle;
+
+}
+
 #links {
 	margin: auto;
 	font-size: 100%;
