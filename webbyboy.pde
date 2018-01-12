@@ -48,7 +48,7 @@ class Trapezoid {
 
 //cool this is for first impressions
 void setup(){
-  frameRate(7);
+  frameRate(10);
   size(1050,550);
   background(#000000);   
     
