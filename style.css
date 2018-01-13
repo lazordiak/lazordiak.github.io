@@ -21,15 +21,3 @@ h1{
 
 }
 
-#links {
-	margin: auto;
-	font-size: 100%;
-        width: 50%;
-        font-family: 'Jura', sans-serif;
-        text-align: center;
-	color: #000000;
-}
-a{
-	color:#000000;
-	margin: 0px 15px 0px 15px;
-}
