@@ -1,6 +1,6 @@
 // all the global variables we need
 //list of the random colors it can choose from
-color[] colorlist = {#FFA0A7, #FFFAFA};
+color[] colorlist = {#FFFAFA};
     
 float[] coords = {-105,0,0,-55,0,0,0,0};
 
