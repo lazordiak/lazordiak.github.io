@@ -58,6 +58,7 @@ void setup(){
 void draw(){
   
     if (drawcount < 45) {
+    delay(1000);
       if (drawcount > 43){
         drawcount = 0;
         
