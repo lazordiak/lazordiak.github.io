@@ -22,9 +22,12 @@ h1{
 }
 
 a{
+  width: 300px;
+  margin: auto;
   font-family: 'Jura', sans-serif;
   color: #000000;
   font-weight: normal; 
 	font-style: none;	
   text-decoration: none;
+  text-align: center;
 }
