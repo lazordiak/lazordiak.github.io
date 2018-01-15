@@ -37,4 +37,26 @@ a:hover{
 }
 
 .wrapper{
+    margin-right: 150px;
+    margin-left: 150px;
+}
+
+div.gallery {
+    margin: 5px;
+    float: left;
+    width: 180px;
+}
+
+div.gallery:hover {
+    
+}
+
+div.gallery img {
+    width: 100%;
+    height: auto;
+}
+
+div.desc {
+    padding: 5px;
+    text-align: center;
 }
