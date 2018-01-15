@@ -18,7 +18,7 @@ p{
 	color: #FFFFFF;
 	font-family: 'Josefin Slab', sans-serif;
 }
-
+/*
 a{
   width: 50%;
   color: #FFFFFF;
@@ -35,6 +35,7 @@ a{
 a:hover{
   color: #E0E0E0;
 }
+*/
 
 .wrapper{
     margin-right: 150px;
@@ -59,4 +60,9 @@ div.gallery img {
 div.desc {
     padding: 5px;
     text-align: center;
+    color: #FFFFFF 
+}
+
+div.desc:hover {
+	
 }
