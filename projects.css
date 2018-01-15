@@ -18,27 +18,23 @@ p{
 	color: #FFFFFF;
 	font-family: 'Josefin Slab', sans-serif;
 }
-/*
-a{
-  width: 50%;
+
+h1{
+  width: 100%;
   color: #FFFFFF;
+  font-size: 100%;
+}
+
+a.class1 {
   text-decoration: none;
-  font-size: 50%;
-  -o-transition: 1s;
-  -ms-transition: 1s;
-  -moz-transition: 1s;
-  -webkit-transition: 1s;
-  transition: 1s;
+  font-decoration: none;
+  color: #FFFFFF;
+  font-family: 'Josefin Slab', sans-serif;
 }
 
-a:hover{
-  color: #E0E0E0;
-}
-*/
-
-.wrapper{
-    margin-right: 150px;
-    margin-left: 150px;
+div.wrapper{
+    margin-right: 300px;
+    margin-left: 300px;
 }
 
 div.gallery {
