@@ -54,32 +54,42 @@ div.wrapper{
 }
 
 div.gallery {
-    margin: 5px;
+    margin: 10px;
+    margin-left: 350px;
+    margin-right: 350px;
     float: left;
-    width: 180px;
+    width: 200px;
+  text-decoration: none;
+  font-decoration: none;
 }
 
 div.gallery:hover {
-    
+    text-decoration: none;
+  font-decoration: none;
 }
 
 div.gallery img {
     width: 100%;
     height: auto;
+  text-decoration: none;
+  font-decoration: none;
 }
 
 div.desc {
     padding: 5px;
     text-align: center;
-    color: #FFFFFF 
+    color: #FFFFFF;
+    font-family: 'Josefin Slab', sans-serif;
+  -o-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -webkit-transition: 0.5s;
+  /* ...and now for the proper property */
+  transition: 0.5s;
+  text-decoration: none;
+  font-decoration: none;
 }
 
 div.desc:hover {
-	
-}
-
-.crop {
- height: 150px;
- width: 150px;
- overflow: hidden;
+	color: #FFA0A7;
 }
