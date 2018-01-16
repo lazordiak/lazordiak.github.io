@@ -77,3 +77,9 @@ div.desc {
 div.desc:hover {
 	
 }
+
+.crop {
+ height: 150px;
+ width: 150px;
+ overflow: hidden;
+}
