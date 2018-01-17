@@ -58,6 +58,10 @@ div.wrapper2{
 	margin-left: 350px;
 }
 
+div.center{
+	text-align: center;
+}
+
 div.gallery {
     margin: 20px;
     float: left;
