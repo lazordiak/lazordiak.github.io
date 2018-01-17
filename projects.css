@@ -53,10 +53,12 @@ div.wrapper{
     margin-left: 450px;
 }
 
+div.wrapper2{
+	margin-right: 350px;
+	margin-left: 350px;
+
 div.gallery {
     margin: 10px;
-    margin-left: 350px;
-    margin-right: 350px;
     float: left;
     width: 200px;
   text-decoration: none;
