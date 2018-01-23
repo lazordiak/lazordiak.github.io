@@ -1,6 +1,9 @@
 function main() {
-  $('body').hide();
-  $('body').fadeIn(1000);
+  $('.wrapper').hide();
+  $('.wrapper').fadeIn(1000);
+  
+  $('.wrapper2').hide();
+  $('.wrapper2').fadeIn(3000);
 
 }
 
