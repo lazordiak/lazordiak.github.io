@@ -10,6 +10,10 @@ canvas {
 	color: #000000;
 }
 
+body {
+	overflow-x: hidden;
+}
+
 p{
 	font-size: 150%;
 	font-weight: normal;
