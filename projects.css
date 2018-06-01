@@ -1,4 +1,5 @@
 canvas {
+	overflow-x: hidden;
 	outline: 0px;
 	position: absolute;
 	left: 0px;
