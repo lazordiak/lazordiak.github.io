@@ -11,6 +11,10 @@ canvas {
 	color: #000000;
 }
 
+body {
+	overflow-x: hidden;
+}
+
 h1{
   
 	margin: 100px;
