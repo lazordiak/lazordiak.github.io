@@ -26,5 +26,5 @@ setInterval(
     //and put it all in the html
     document.getElementById('characterTable').innerHTML = rows.join("");
   },
-  200
+  100
 );
