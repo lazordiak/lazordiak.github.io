@@ -41,7 +41,7 @@
     <p>
       I'm enamored with this idea of fluidity and ambiguity: of the individual, of a culture, of a story. So I built my own bard, to tell a different story each time.
       I've always felt that wherever there is data there's a story, and converting that data into something meaningful is one of the most valuable
-      endeavors a person can undertake.
+      endeavors a person can undertake (and that this is the point of art, maybe??)
     </p>
     <p>
     Here's how it works: we started by scraping the text of the top 25 books on Project Gutenberg. We
@@ -49,10 +49,22 @@
     different words that were meant to be somewhat representative of their personality and/or role in the story.
     Using Python, we built a script that compiles a JSON file of all number of times every keyword appears in each book,
     (insert pic of json here), and scaled the word occurrences so that they would be in roughly the same range.
+    Then, for each character, we assign them
+    one of the twenty five books. We add the word occurrences for each of the three words together
+    to get a total score. This score is divided by the total score of all characters to get
+    the "level of influence" for each character in that particular story.
+  </p>
+  <p>
+    The story itself is my own translation
+    of the first twenty lines of the Iliad with a with certain sections added and removed. For each of these
+    changed sections there are ten possible choices we can use to fill them in, one for each character.
+    We use a JS script to randomly select one of the characters with a probability
+    based on their influence score from before,
+    and in that way we populate the story. Thus, each time the page is refreshed each
+    character gets a new book, a new score, and a new story is written.
   </p>
       <p>
-      The Iliad was many stories -- though we only have the one, it was sung over and over with countless variations.
-      <a href="https://lazordiak.github.io/iliad-storytelling/" class="class1">Here</a> are some of those variations.
+      <a href="https://lazordiak.github.io/iliad-storytelling/" class="class1">Here</a> is everything in action.
       include 25 books used, some images of process and the words of each character, etc
     </p>
     <p>
