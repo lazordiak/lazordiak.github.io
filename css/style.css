@@ -11,10 +11,6 @@ canvas {
 	color: #000000;
 }
 
-#id {
-	color: #858585;	
-}
-
 body {
 	overflow-x: hidden;
 }
@@ -31,7 +27,7 @@ h1{
 
 a{
   width: 50%;
-  color: #000000;	
+  color: #858585;	
   text-decoration: none;
   font-size: 2em;
   -o-transition: 1s;
