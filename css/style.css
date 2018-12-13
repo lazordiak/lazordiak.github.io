@@ -11,6 +11,10 @@ canvas {
 	color: #000000;
 }
 
+#id {
+	color: #858585;	
+}
+
 body {
 	overflow-x: hidden;
 }
