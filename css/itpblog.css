@@ -10,6 +10,11 @@ canvas {
 	color: #000000;
 }
 
+img {
+    max-width:50%;
+    height:auto;
+}
+
 html {
 	overflow-x: hidden;
 }
