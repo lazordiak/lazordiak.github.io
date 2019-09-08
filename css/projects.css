@@ -10,12 +10,6 @@ canvas {
 	color: #000000;
 }
 
-.center-div
-{
-  margin: 0 auto;
-  width: 100px;
-}
-
 html {
 	overflow-x: hidden;
 }
@@ -41,8 +35,11 @@ h1{
 h2{
   width: 100%;
   color: #FFA0A7;
+	/*
   margin-left: 450px;
 	margin-right: 450px;
+	*/
+	margin: 0 auto;
   font-family: 'Josefin Slab', sans-serif;
   font-size: 215%;
 }
