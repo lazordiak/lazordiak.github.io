@@ -50,6 +50,18 @@ h2{
   font-size: 215%;
 }
 
+h2{
+  width: 100%;
+  color: #FFA0A7;
+	/*
+  margin-left: 450px;
+	margin-right: 450px;
+	*/
+	margin: 0 auto;
+  font-family: 'Josefin Slab', sans-serif;
+  font-size: 215%;
+}
+
 a.class1 {
   text-decoration: none;
   font-decoration: none;
