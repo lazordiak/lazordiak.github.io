@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <link rel="stylesheet" type="text/css" href="../../css/itpprojects.css">
+  <meta charset="UTF-8">
+  <title>Combination Lock</title>
+  <link href="https://fonts.googleapis.com/css?family=Josefin+Slab|Jura" rel="stylesheet">
+  <style>
+    body {
+      background-color: #000000;
+    }
+  </style>
+</head>
+
+<body>
+
+  <h1><a href="physcompindex.html" class="class1">back</a></h1>
+  <h2>An LED Button Combination Lock</h2>
+
+  <div class="wrapper">
+
+    <p>
+      This week's class was all about digital input and output -- turning things on
+      and sending signals through our microcontrollers. At the end of the lab, it
+      suggests a practical application of this: a combination lock. Okay, I thought.
+      How about I make a combination lock with some LEDs and buttons. Should be easy enough.
+    </p>
+    <p>
+      How very wrong I was.
+    </p>
+    <p>
+      My setup was three buttons wired to my microcontroller as inputs on pins D2,
+      D3, and D4. Two LEDs were wired as outputs on pins D5 and D6. The idea is that
+      one LED, D6, is lit up by default, and when the correct button press combination
+      is entered D6 LED shuts off and the D5 LED lights up.
+    </p>
+    <p>
+      My assumption was that if I used a series of nested if statements in the Arduino
+      code, I could accomplish this switch easily. So I wrote something along the lines
+      of "if bottom button is pressed, then if top button is pressed, then if middle button
+      is pressed, turn D6 off and turn D5 on". This spectacularly failed to work. The
+      bottom LED did turn off and the top did turn on, but ONLY when all three buttons
+      were held down, and the order didn't matter at all. In effect, I'd made a switch
+      that switched when three buttons were pressed at the same time, which I definitely
+      didn't want.
+    </p>
+    <p>
+      So, I started some troubleshooting. I identified two problems. One was the speed.
+      Arduino was running at something like 60 loops per second, so it's no surprise the
+      light was switching instantaneously. Even if there was some single moment of delay
+      between the input not being entered correctly and the input being entered correctly,
+      human eyes wouldn't perceive it. Also, the if statements were structured in a way
+      that, at some point during these incredibly fast loops, they were all going to be true.
+      Holding the buttons was the only way to keep registering the push, because my simple
+      script didn't remember state.
+    </p>
+    <p>
+      So I decided I needed a state machine.
+    </p>
+    <p>
+      Helpfully, I found <a href="https://www.arduino.cc/en/Tutorial/StateChangeDetection?from=Tutorial.ButtonStateChange" class="class1">
+      this code snippet</a> on the Arduino website, which seemed like a useful basis for
+      my own state machine. It had a way of saving button presses in state from loop to
+      loop, which was exactly what I needed. I rewrote it to keep three buttons in state,
+      and I used the buttonPressCounter variable to keep track of whether each button had
+      been pushed or not (so it was either zero or one). If a button was pushed out of
+      sequence, the button state was supposed to go back to zero. I also increased the
+      delay to 100, just to make doubly sure there was no bounceback.
+    </p>
+    <p>
+      This... kind of worked. It registered the correct button order, but the thing is
+      the sequence wasn't resetting when the wrong button was pressed, so that even if
+      you pressed yellow then blue then blue then blue then blue THEN green it'd still
+      light up. This wasn't ideal for a combination lock, since anyone would eventually
+      just stumble onto the correct order.
+    </p>
+    <p>
+      So I did a little bit of tinkering. I'd been resetting buttonState when the incorrect
+      order was entered, but instead I tried resetting buttonPushCounter. My reasoning here
+      was that if we reset the pushCounter instead of the state we'll never get an
+      inccorect combination triggering the light, since the pushCounter at this point was
+      referenced in every if statement.
+    </p>
+    <p>
+      This also kind of worked, but a bit better this time. The LED DID only turn
+      on when the correct order was pressed, but all three buttons had to be held
+      at the same time, and the light turned off once they were released. I suspect
+      it had something to do with the way state was redefined at the beginning of each
+      loop, but at this point (since it was past midnight) I declared my combination
+      lock a temporary win. Check back in a few days when I've gotten the chance to
+      debug this further, and we may have a 100% foolproof lock -- that is, foolproof
+      to anyone who can't guess a three-button combination.
+    </p>
+    <p>
+      Code is posted below.
+    </p>
+    <img src="../../images/lock2.jpg" alt="The first section of my Arduno code."/>
+    <img src="../../images/lock3.jpg" alt="The second section of my Arduino code."/>
+    <img src="../../images/lock4.jpg" alt="The third section of my Arduino code."/>
+
+    <address>
+      Comments? Questions? Concerns? Email me
+      <a href="mailto:swd246@nyu.edu" class="class1">here</a>!
+    </address>
+    </div>
+
+</body>
+
+</html>
