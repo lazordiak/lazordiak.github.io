@@ -57,6 +57,20 @@ a.class1 {
   transition: 0.5s;
 }
 
+a.class2 {
+	font-size: 150%;
+  text-decoration: none;
+  font-decoration: none;
+  color: #FFA0A7;
+  font-family: 'Josefin Slab', sans-serif;
+  -o-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -webkit-transition: 0.5s;
+  /* ...and now for the proper property */
+  transition: 0.5s;
+}
+
 a.class1:hover{
   color: #FFA0A7;
 }
