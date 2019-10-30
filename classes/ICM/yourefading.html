@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <link rel="stylesheet" type="text/css" href="../../css/itpprojects.css">
+  <meta charset="UTF-8">
+  <title>You're Fading</title>
+  <link href="https://fonts.googleapis.com/css?family=Josefin+Slab|Jura" rel="stylesheet">
+  <style>
+    body {
+      background-color: #000000;
+    }
+  </style>
+</head>
+
+<body>
+
+  <h1><a href="icmindex.html" class="class1">back</a></h1>
+  <h2>You're Fading -- ICM Week 1</h2>
+
+  <div class="wrapper">
+    <p>
+      For our first ICM homework we were tasked to do something with createCapture();  in
+      P5, which is basically a function that streams video from your webcam to your P5 sketch.
+      I actually had an idea almost immediately, for a sketch that erases the viewer
+      if the move too much. I wanted to make a createcapture where you had to stand very
+      still, or else the video would disappear.
+    </p>
+    <p>
+      In my head, I had an idea for how I'd do this. What I planned to do is keep track
+      of the RGB values for each pixel, and if they changed from loop to loop I'd lower
+      the alpha. Theoretically, this means that eventually the alpha for pixels where
+      people kept moving would go all the way down, and that part of the image would disappear.
+    </p>
+    <p>
+      At the beginning my sketch had three parts. I set up the setup function, where I
+      got the image, I drew it in draw and accessed the pixels, and up top I put a number
+      of global variables which would hold my rgb values in state: currentred, currentgreen,
+      pastblue, pastred, etc. This way I could keep track of what the previous rgb
+      values were and compare them to the current ones.
+    </p>
+    <p>
+      In the draw section, I set up if statements inside my pixel for loops to check
+      if currentred != pastred, and if they found the two reds weren't the same they
+      dropped the alpha all the way down. This did something, but not the something I
+      wanted. It looked sort of like pixels that changed often were constantly disintegrating,
+      but they kept coming back, which was definitely not what I wanted.
+    </p>
+    <p>
+      One obvious problem that someone pointed out was that in my for loops I was keeping
+      track of one global variable, currentred and pastred, that would account for all of the
+      pixels, so that every time the loop ran over a pixel of course things would change.
+      To actually keep track of all the rgb states for each pixel, I had to set up
+      an empty array, which I called pixelValues. The way pixelValues worked is that
+      for every pixel I would measure its rgb (in the pixel for loop), and then place
+      those values in the same index in pixelValues that they had in the video pixel array.
+      That way, I had a copy of my pixel array with the past values, and I could compare every
+      one to the current value to get an actually accurate assessment of which pixels
+      were changing.
+    </p>
+    <p>
+      Even when I got this problem solved, I couldn't figure out how to keep the
+      alpha in state so that the video would slowly disappear, so I improvised. What
+      I ended up doing was watch for changing pixel values, and if the pixel values
+      changed at all I dropped the alpha all the way down. This produced an effect
+      where it looked like someone would pixelate and teleport when they moved,
+      which all things considered was pretty cool. It still fits into my theme of having
+      to stand still as well, and I'm certainly going to go tweak this algorithm more
+      in prder to get it working the way I want.
+    </p>
+    <p>
+      Throughout my life, I've known so many
+      people who lived in the past, or who were scared of ever moving because they
+      didn't know what the future held. In some cases I've been that person, too. So this
+      is a sketch for all these people.
+    </p>
+    <p>
+      Code can be found <a class="class1" href="https://editor.p5js.org/Lazordisk/sketches/1F52PuPey">here</a>.
+    </p>
+
+      <img src="../../images/fading1.jpg" alt="This is me, wearing the headband
+      and looking into the camera."/>
+      <address>
+        Comments? Questions? Concerns? Email me
+        <a href="mailto:swd246@nyu.edu" class="class1">here</a>!
+      </address>
+    </div>
+
+</body>
+
+</html>
