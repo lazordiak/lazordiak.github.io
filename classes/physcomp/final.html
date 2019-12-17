@@ -37,6 +37,8 @@
       50 gallons or so, so I thought I could have some good interactions in there
       whatever I decided to end up doing.
     </p>
+    <img src="../../images/final1.jpg" alt="The first switch for my headband, the two
+    clasps I soldered to the wires."/>
     <p>
       Once I knew what I'd hold the water in, I needed to get started on a touch circuit.
       I googled for "human touch circuit" on Google and found <a class="class1" href="https://arduino.stackexchange.com/questions/16150/human-circuit-trigger">this diagram, </a>
@@ -44,8 +46,11 @@
       but it didn't seem to be working correctly. What I figured out by using the serial
       monitor was that the threshold, as set in the diagram, was way too low. I was
       getting values in the thousands, and once I reset the threshold the circuit worked
-      perfectly.
+      perfectly. In the photo, you can see the little LED is lighting up when the wires
+      are touched.
     </p>
+    <img src="../../images/final2.jpg" alt="The first switch for my headband, the two
+    clasps I soldered to the wires."/>
     <p>
       After figuring out the touch sensor, I needed to decide what it would turn on.
       In my head, I imagined there would be some mechanism that made the water churn
@@ -56,16 +61,21 @@
       along the bottom of the tank and have the pump blow bubbles through the tank.
       The problem was, I didn't have an air pump and didn't really know where to find one.
       I talked with Nicole Cabalquinto, another student, because I heard she had worked with
-      water before, and she told me she had an aquarium pump I could borrow.
+      water before, and she told me she had an aquarium pump I could borrow. <a class="class1" href="https://www.amazon.com/KEDSUM-Submersible-Fountain-Aquarium-Hydroponics/dp/B07GNC973S/ref=asc_df_B07GNC973S/?tag=&linkCode=df0&hvadid=309951030128&hvpos=1o1&hvnetw=g&hvrand=4036017421777862258&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9004338&hvtargid=pla-577657351359&ref=&adgrpid=60883531599&th=1">Here</a> is
+      a link to the pumps I used  on Amazon. Below is a picture of my paper prototype,
+      where I considered the idea of bubbles and haptic sensors you would step on with bare feet.
     </p>
-    LINK TO THE PUMPS ON AMAZON
+    <img src="../../images/final3.jpg" alt="The first switch for my headband, the two
+    clasps I soldered to the wires."/>
     <p>
       I tried the pumps in my kitchen sink and found they were... quite forceful.
       With that in mind, I decided to try laying the pumps on their sides in the
       tank, so they would push the water around and make it churn. I also bought
       some black sand and glitter to put in the tank, so you could tell the water was
       spinning around. This looked okay as a demo, but I wasn't sure what the final
-      product would look like.
+      product would look like. I also realized I'd need a way to trigger the pumps to turn
+      on and off, so I bought a <a class="class1" href="https://www.adafruit.com/product/2935?gclid=EAIaIQobChMIvuXJjuW95gIVJIVaBR2GlAyLEAQYASABEgKVNfD_BwE">four-outlet power relay</a>
+      from Adafruit.
     </p>
     <p>
       Though originally my plan had been to have people complete the circuit by standing
@@ -74,7 +84,8 @@
       I also realized that at the show people would be moving by really fast. With that in mind,
       I decided to switch my idea to use hand panels instead of foot panels. Also at playtesting
       I came up with the idea of adding pressure sensors so the installation would know when people
-      were there, which would also help to get people into the positions I wanted.
+      were there, which would also help to get people into the positions I wanted, so the conducive foot panels
+      became pressure sensors.
     </p>
     <p>
       To make the pressure pads, I followed <a class="class1" href="https://www.instructables.com/id/Use-a-DIY-Pressure-Plate-Switch-to-Automate-Your-H/">this guide </a>
@@ -82,10 +93,17 @@
       had a problem, which was that there was so much noise that the readings were going
       all over the place and the switches would turnn on and off rapidly. To solve the problem,
       I took the averages of a series of readings instead of just using the single reading.
-      This smoothing effect made the switches work the way I wanted to.
+      This smoothing effect made the switches work the way I wanted to. Below are a few
+      pictures of the pressure pads, including inside.
     </p>
+    <img src="../../images/final4.jpg" alt="The first switch for my headband, the two
+    clasps I soldered to the wires."/>
+    <img src="../../images/final5.jpg" alt="The first switch for my headband, the two
+    clasps I soldered to the wires."/>
     <p>
-      Once all the electronics worked, I had to worry about fabrication.
+      I connected the Adafruit relay to the breadboard and modified the touch circuit
+      to turn the pumps on, which worked really well. Once I had all the basics of the electronics
+      down, I had to worry about the fabrication aspect.
     </p>
 
 
