@@ -5,7 +5,7 @@
 <head>
   <link rel="stylesheet" type="text/css" href="../../css/itpprojects.css">
   <meta charset="UTF-8">
-  <title>PComp Final</title>
+  <title>Liquid Relationships</title>
   <link href="https://fonts.googleapis.com/css?family=Josefin+Slab|Jura" rel="stylesheet">
   <style>
     body {
@@ -22,15 +22,70 @@
   <div class="wrapper">
 
     <p>
-      This is the page for my physical computation final. It's dynamic, so I'll
-      be updating it as my project evolves. I use water to express
-      the relationships between people -- on approach, I have a series of pumps that
-      make the water roil and churn. If people connect with each other physically
-      in order to complete a circuit, the waters calm and an LED light show appears.
+      In my previous blog post I talk about how I got the inspiration for my final
+      from human circuits and water, and how I wanted to combine those things. Though my
+      idea started out very vague still, there was one very important thing in my mind:
+      if you're working with water, it needs to be somehow contained.
     </p>
 
     <p>
       Link to a rough draft of the project: <a class="class1" href="https://youtu.be/dLwI_hSg0yM">here</a>
+    </p>
+
+    <p>
+      I started out with a fish tank that I used as a kid. It was pretty big, maybe
+      50 gallons or so, so I thought I could have some good interactions in there
+      whatever I decided to end up doing.
+    </p>
+    <p>
+      Once I knew what I'd hold the water in, I needed to get started on a touch circuit.
+      I googled for "human touch circuit" on Google and found <a class="class1" href="https://arduino.stackexchange.com/questions/16150/human-circuit-trigger">this diagram, </a>
+      I followed the instructions and duplicated the circuit that's shown in the diagram,
+      but it didn't seem to be working correctly. What I figured out by using the serial
+      monitor was that the threshold, as set in the diagram, was way too low. I was
+      getting values in the thousands, and once I reset the threshold the circuit worked
+      perfectly.
+    </p>
+    <p>
+      After figuring out the touch sensor, I needed to decide what it would turn on.
+      In my head, I imagined there would be some mechanism that made the water churn
+      until the two wires were touched, and then the water would calm down and
+      there would be lights shining up from the bottom of the tank. The problem was,
+      I didn't know what I could do to make the water churn. I originally thought of having
+      an air pump which would be attached to a hose, and I thought I could lay the hose
+      along the bottom of the tank and have the pump blow bubbles through the tank.
+      The problem was, I didn't have an air pump and didn't really know where to find one.
+      I talked with Nicole Cabalquinto, another student, because I heard she had worked with
+      water before, and she told me she had an aquarium pump I could borrow.
+    </p>
+    LINK TO THE PUMPS ON AMAZON
+    <p>
+      I tried the pumps in my kitchen sink and found they were... quite forceful.
+      With that in mind, I decided to try laying the pumps on their sides in the
+      tank, so they would push the water around and make it churn. I also bought
+      some black sand and glitter to put in the tank, so you could tell the water was
+      spinning around. This looked okay as a demo, but I wasn't sure what the final
+      product would look like.
+    </p>
+    <p>
+      Though originally my plan had been to have people complete the circuit by standing
+      on conducive panels without shoes and then touching, during playtesting a lot of
+      people told me they didn't want to take their shoes off. This made sense to me, and
+      I also realized that at the show people would be moving by really fast. With that in mind,
+      I decided to switch my idea to use hand panels instead of foot panels. Also at playtesting
+      I came up with the idea of adding pressure sensors so the installation would know when people
+      were there, which would also help to get people into the positions I wanted.
+    </p>
+    <p>
+      To make the pressure pads, I followed <a class="class1" href="https://www.instructables.com/id/Use-a-DIY-Pressure-Plate-Switch-to-Automate-Your-H/">this guide </a>
+      to make the pressure pad. Originally the touch switch and the pressure switches
+      had a problem, which was that there was so much noise that the readings were going
+      all over the place and the switches would turnn on and off rapidly. To solve the problem,
+      I took the averages of a series of readings instead of just using the single reading.
+      This smoothing effect made the switches work the way I wanted to.
+    </p>
+    <p>
+      When I 
     </p>
 
 
