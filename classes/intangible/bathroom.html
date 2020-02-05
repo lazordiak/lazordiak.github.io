@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <link rel="stylesheet" type="text/css" href="../../css/itpprojects.css">
+  <meta charset="UTF-8">
+  <title>Bathroom</title>
+  <link href="https://fonts.googleapis.com/css?family=Josefin+Slab|Jura" rel="stylesheet">
+  <style>
+    body {
+      background-color: #000000;
+    }
+  </style>
+</head>
+
+<body>
+
+  <h1><a href="intangibleindex.html" class="class1">back</a></h1>
+  <h2>Bathroom</h2>
+
+  <div class="wrapper">
+    <p>
+      There are at least four unique interactions that I can find in the bathroom -- actually, now that I think about it, there are five: the hand dryer, paper towel dispenser, toilet, sink faucet, soap dispenser... Actually also lights, so that’s six.
+    </p>
+    <p>
+      The crazy thing is that each of these interactions are subtly different, which in retrospect makes sense; it’s probably the case that they’re all made by different companies which have different goals and different ways of doing things. I did some research with each system to see how it works.
+    </p>
+    <p>
+      The hand dryer is motion sensing, but it needs continual motion. If you put your hands under it and hold them still it’ll shut off after about three seconds, which is annoying because you need to keep constantly waving your hands. The amount of motion it needs to detect is very small, though.
+    </p>
+    <p>
+      The paper towel dispenser is, I think, proximity based and not motion based. It’ll dispense a paper towel whenever anything gets near it, but it won’t dispense a paper towel if there is already one which has been dispensed without being torn off.
+    </p>
+    <p>
+      The sinks must be proximity based, not motion based. I kept my hands very still wondering if they would turn off, but they didn’t. After some Googling, I believe the sink is an infrared sensor.
+Soap dispenser… must also be infrared, because it won’t dispense soap twice if you keep your hand under it. However, I have also seen motion controlled soap dispensers. For this one, it seems to wait until you’ve removed your hand from under the soap dispenser before it refreshes and allows you to get more soap -- this is indicated by a blinking light on the bottom left of the soap dispenser which turns off when you remove your hand.
+
+    </p>
+    <p>
+      The toilet is definitely a proximity sensor, almost certainly infrared. This is because it’s turned on while I’ve still been using it if I bent forward enough. This is the biggest pain point which would be the easiest to address, in my opinion.
+    </p>
+    <p>
+      Regarding the interactive framework design, all of these processes begin as reactive ones. Nothing in the bathroom will interact with the user unless the user interacts with it first. They also all start in the background and end in the foreground: the user does something, lots of hidden internal mechanics activate, and then very obvious results are achieved like paper dispensing or flushing or water coming out of the sink. It’s a pretty straightforward process despite the differences in the particulars of which sensors are used or which situation the user is trying to address, and it works well.
+    </p>
+    <p>
+      Regarding specifics about how they may fail, I thought this was a really interesting article (https://www.businessinsider.com/why-automatic-bathroom-toilet-flush-sink-sensors-suck-2018-7). Specifically, the problem of old batteries or faulty sensors is something I hadn’t thought of before. With analog processes, you don’t have to worry about batteries running out because you’re the source of the power and as long as you act the system will be fine. With batteries, that automatic toilet is sentenced to one day die as soon as it’s born. The fact is that anything that does not directly involve the user manipulating it is subject to human error because it is, to a certain extent, not controllable (this also reminds me of this article https://www.theverge.com/2019/8/11/20800111/us-navy-uss-john-s-mccain-crash-ntsb-report-touchscreen-mechanical-controls).
+    </p>
+    <p>
+      There's also the question of what makes an "intangible interaction". At the beginning of the class, I thought that maybe it's something where you can't tell how it's working, but that seems a bit silly now. Many tangible devices have inner workings you don't really know about. I think the true meaning of intangible interaction is... Well, "intangible" has a literal meaning and a connotative meaning. Air and light are intangible, but we would also describe ghosts and memories as intangible. I think intangible interactions carry something of this mystery around them. They're not intuitive in the same way that knobs and levers are, because they don't offer us the same affordances.
+    </p>
+
+      <address>
+        Comments? Questions? Concerns? Email me
+        <a href="mailto:swd246@nyu.edu" class="class1">here</a>!
+      </address>
+    </div>
+
+</body>
+
+</html>
