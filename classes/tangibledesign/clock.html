@@ -5,7 +5,7 @@
 <head>
   <link rel="stylesheet" type="text/css" href="../../css/itpprojects.css">
   <meta charset="UTF-8">
-  <title>Absurd</title>
+  <title>Flower Clock</title>
   <link href="https://fonts.googleapis.com/css?family=Josefin+Slab|Jura" rel="stylesheet">
   <style>
     body {
@@ -17,12 +17,66 @@
 <body>
 
   <h1><a href="tangibleindex.html" class="class1">back</a></h1>
-  <h2>Absurd Situation</h2>
+  <h2>Flower Clock</h2>
 
   <div class="wrapper">
     <p>
-      Ok, here's the scene.
+      For some reason, when I heard the assignment was to build a clock, I immediately thought of a flower clock -- a hypothetical device where one could use flowers to tell time by measuring when the flowers opened and closed. The problem with flower clocks is that... they don't really work. But I love flowers, and I love incorporating nature into my work, so I thought why not build, instead of a flower clock, a clock with a flower?
     </p>
+    <h3>Materials</h3>
+    <ul>
+      <li>
+        Three red arcade buttons from Tinkersphere (click <a href="https://tinkersphere.com/buttons-switches/806-redarcadebutton.html" class="class2">here</a> to view).
+      </li>
+      <li>
+        A four pin rocker switch, also from Tinkersphere (click <a href="https://tinkersphere.com/buttons-switches/841-rocker-switch-dpst-4-pin.html" class="class2">here</a> to view).
+      </li>
+      <li>
+        One 6" by 2" and one 6" by 6" bamboo drawer organizer from The Container Store (click <a href="https://www.containerstore.com/s/clearance/stackable-bamboo-drawer-organizers-old/1d?productId=10023938&country=US&currency=USD&utm_source=tcscompshop&utm_medium=feed&utm_campaign=google&cid=cse%7Cevergreen%7Cclearance%7Cgoogle%7C%7C%7Bcampaignid%7D%7C%7Bproduct_id%7D%7C%7Bdevice%7D&gclid=EAIaIQobChMImprip7jL5wIViZyzCh3YrAbzEAQYASABEgL7MPD_BwE" class="class2">here</a> to view).
+      </li>
+      <li>
+        One plant from the Home Depot gardening section.
+      </li>
+      <li>
+        Potting soil, also from the Home Depot gardening section.
+      </li>
+      <li>
+        Various wires and resistors held together with a microcontroller.
+      </li>
+    </ul>
+    <h3>Fabrication</h3>
+    <p>
+      My plan was to use the plant as part of the clock's control interface, and I decided that I would make the clock so that by touching the plant you could change time or set an alarm. Making the plant-touching work required the use of Arduino's CapSense library, which is phenomenally easy to use. Just by putting a wire into the soil of the plant, I could detect when someone was touching it.
+    </p>
+    <p>
+      With the capsense figured out, I needed to decide on how I would change the time. I bought three arcade buttons from Tinkersphere, one to use as hours, one to use as minutes, and one to use as seconds. I also bought a rocker switch since I wanted my flower clock to have both a time set and an alarm function.
+    </p>
+    <p>
+      I organized my materials so that the electronics sat in the smaller bamboo organizer above the potted plant, since I didn't want any water to get on my microcontroller or buttons ans ruin them. I needed to fabricate a control panel for the buttons and rocker switch, which took a lot of tries prototyping on cardboard because the dimensions of the rocker switch were off on the Tinkersphere site. Once I had all the dimensions down correctly, I put the panel mount elements of my control panel in and soldered wires to them all.
+    </p>
+    <p>
+      After that, all that remained was putting the pieces together. I put the microcontroller inside the smaller box, drilled a small hole through the bottom so the wire could go into the plant soil, drilled another hole into the side so the micro-USB could go through, and after attaching the control panel to the microcontroller I screwed it all in. Then I spread some potting soil on the bottom layer and put my plant in!
+    </p>
+    <h3>Computation</h3>
+    The way the code works is by recording in state whether the plant is being touched and what state the rocker switch is in.
+    <img src="../../images/flower1.png" alt="The first section of my Arduno code."/>
+    <img src="../../images/flower2.jpg" alt="The first section of my Arduno code."/>
+    <img src="../../images/flower3.jpg" alt="The first section of my Arduno code."/>
+    <img src="../../images/flower4.jpg" alt="The first section of my Arduno code."/>
+    <img src="../../images/flower5.jpg" alt="The first section of my Arduno code."/>
+    <img src="../../images/flower6.jpg" alt="The first section of my Arduno code."/>
+    <img src="../../images/flower7.jpg" alt="The first section of my Arduno code."/>
+    <img src="../../images/flower8.jpg" alt="The first section of my Arduno code."/>
+    <img src="../../images/flower9.jpg" alt="The first section of my Arduno code."/>
+    <video width="800" height="800" controls>
+      <source src="../../images/flower10.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    <video width="800" height="800" controls>
+      <source src="../../images/flower11.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+
 
       <address>
         Comments? Questions? Concerns? Email me
