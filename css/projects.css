@@ -34,6 +34,14 @@ li{
 	font-family: 'Josefin Slab', sans-serif;
 }
 
+ul{
+	font-size: 150%;
+	font-weight: normal;
+	font-style: none;
+	color: #FFFFFF;
+	font-family: 'Josefin Slab', sans-serif;
+}
+
 h1{
   width: 100%;
   color: #FFFFFF;
