@@ -129,3 +129,8 @@ div.desc {
 div.desc:hover {
 	color: #FFA0A7;
 }
+
+div.flex {
+	display: flex;
+  align-items: center;
+}
