@@ -16,6 +16,23 @@ img {
     margin: 0 auto;
 }
 
+a.class3 {
+	color: #FFFFFF;
+	font-family: 'Josefin Slab', sans-serif;
+-o-transition: 0.5s;
+-ms-transition: 0.5s;
+-moz-transition: 0.5s;
+-webkit-transition: 0.5s;
+/* ...and now for the proper property */
+transition: 0.5s;
+text-decoration: none;
+font-decoration: none;
+}
+
+a.class3:hover {
+	color: #FFA0A7;
+}
+
 html {
 	overflow-x: hidden;
 }
