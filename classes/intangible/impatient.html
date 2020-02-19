@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <link rel="stylesheet" type="text/css" href="../../css/itpprojects.css">
+  <meta charset="UTF-8">
+  <title>Impatient Friend</title>
+  <link href="https://fonts.googleapis.com/css?family=Josefin+Slab|Jura" rel="stylesheet">
+  <style>
+    body {
+      background-color: #000000;
+    }
+  </style>
+</head>
+
+<body>
+
+  <h1><a href="intangibleindex.html" class="class1">back</a></h1>
+  <h2>Impatient Friend -- APDS9960 Sensor Experimentation</h2>
+
+  <div class="wrapper">
+    <h3>Simple experiment with Adafruit's APDS9960</h3>
+    <p>
+      Many of technology's problems, such as they are, seem to me to stem from its inherent lack of humanity. It's hard for us to wrap our minds around bytes and ones and zeroes, when our lives as lived are full of nuance and implicit communication. That's why I took an immediate shine to Adafruit's APDS9960 sensor, which is used directly to measure RGB values and indirectly to measure gesture. Gesture is such a simple, immediately understandable human activity, and for our lab this week I wanted to build something equally personable.
+    </p>
+    <img src="../../images/bathroom1.jpg" alt="A screenshot of Adobe Audition."/>
+    <h3>Impatient Friend</h3>
+    <p>
+      I feel like everyone's first instinct when tasked to draw something is to make a smiley face, so that's what I did. In p5 I set up a series of rectangles to make a blocky, pixelated face, but it still seemed a little dead to me, not in keeping with the kind of feeling I wanted to convey. So, I made the eyes blink by lowering the framerate to 5 frames per second and adding some conditionals to lower and raise the 'eyelids'. It's amazing what a simple animation like that will do. The blink animation has a .05 percent chance to start every frame, which adds a randomness which is really organic.
+    </p>
+    <img src="../../images/friend1.png" alt="A screenshot of Adobe Audition."/>
+    <p>
+      However, your new friend is impatient. Every so often, they will call for you to make a specific gesture (a 0.05 percent chance every frame), and they won't be very happy until you do. Fortunately, they are also easily appeased. Once you perform the correct gesture, they'll have some kind words for you -- until the next time they get impatient.
+    </p>
+    <img src="../../images/friend2.png" alt="A screenshot of Adobe Audition."/>
+    <video width="800" height="800" controls>
+      <source src="../../images/intangiblebroom1.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+
+    <p>
+      Code can be found by clicking <a href="https://editor.p5js.org/Lazordisk/sketches/ZtMu9EYE" class="class3">here</a>. It will, of course, require an Arduino and an APDS9960 sensor to use properly.
+    </p>
+
+
+
+      <address>
+        Comments? Questions? Concerns? Email me
+        <a href="mailto:swd246@nyu.edu" class="class1">here</a>!
+      </address>
+    </div>
+
+</body>
+
+</html>
