@@ -20,31 +20,41 @@
   <h2>Flower Clock</h2>
 
   <div class="wrapper">
+    <h3>Ideation</h3>
     <p>
-      For some reason, when I heard the assignment was to build a clock, I immediately thought of a flower clock -- a hypothetical device where one could use flowers to tell time by measuring when the flowers opened and closed. The problem with flower clocks is that... they don't really work. But I love flowers, and I love incorporating nature into my work, so I thought why not build, instead of a flower clock, a clock with a flower?
+      During the depths of winter, many people suffer from ailments like SAD (Seasonal Affective Disorder) and a general lack of energy, which can be compounded by life in a dense city like New York without easy access to greenery. For our first assignment in device design, building a clock, I wanted to explore something that blended the industrial and the personal and helped to foster a personal connection with the devices we use.
+    </p>
+    <p>
+      With 'clock' as a starting point, I was reminded of the idea of a <a href="https://en.wikipedia.org/wiki/Linnaeus%27s_flower_clock" class="class3">flower clock</a> -- a hypothetical device where one could use flowers to tell time by measuring when the flowers opened and closed. The problem with flower clocks as described by Linnaeus is that... they don't really work. Nature is too finicky to open and close flowers by according to man-made rules. I realized, though, that though a flower clock may not be realizable, a clock with a flower is the perfect companion for those people who dread waking up on winter mornings.
+    </p>
+    <h3>Design Process</h3>
+    <p>
+      I knew right away that I wanted a time setting feature and an alarm feature for my plant clock, and as soon as I settled on the idea of incorporating flowers I also knew that I wanted tangible interaction with the greenery to be the main method of interaction.
+    </p>
+    <p>
+      Since I was working with organic materials, there were a few important considerations to take into account. The most obvious of these was water -- getting any of the electronics wet would result in a ruined project. There were also the number and type of plants to take into consideration. The plants had to be sturdy enough that they wouldn't mind being touched. Originally, I envisiond three separate plants separated by acrylic panels with the electronics in the back. Each plant would be dedicated to either hours, minutes or seconds.
+    </p>
+    <img src="../../images/planto.jpg" alt="The first section of my Arduno code."/>
+    <p>
+      However, once I got my hands on the materials and the plants I decided that, in order to keep things compact,
     </p>
     <h3>Materials</h3>
-    <ul>
-      <li>
-        Three red arcade buttons from Tinkersphere (click <a href="https://tinkersphere.com/buttons-switches/806-redarcadebutton.html" class="class2">here</a> to view).
-      </li>
-      <li>
-        A four pin rocker switch, also from Tinkersphere (click <a href="https://tinkersphere.com/buttons-switches/841-rocker-switch-dpst-4-pin.html" class="class2">here</a> to view).
-      </li>
-      <li>
-        One 6" by 2" and one 6" by 6" bamboo drawer organizer from The Container Store (click <a href="https://www.containerstore.com/s/clearance/stackable-bamboo-drawer-organizers-old/1d?productId=10023938&country=US&currency=USD&utm_source=tcscompshop&utm_medium=feed&utm_campaign=google&cid=cse%7Cevergreen%7Cclearance%7Cgoogle%7C%7C%7Bcampaignid%7D%7C%7Bproduct_id%7D%7C%7Bdevice%7D&gclid=EAIaIQobChMImprip7jL5wIViZyzCh3YrAbzEAQYASABEgL7MPD_BwE" class="class2">here</a> to view).
-      </li>
-      <li>
-        One plant from the Home Depot gardening section.
-      </li>
-      <li>
-        Potting soil, also from the Home Depot gardening section.
-      </li>
-      <li>
-        Various wires and resistors held together with a microcontroller.
-      </li>
-    </ul>
-    <h3>Fabrication</h3>
+    <p>
+      Three red arcade buttons from Tinkersphere (click <a href="https://tinkersphere.com/buttons-switches/806-redarcadebutton.html" class="class2">here</a> to view).
+    </p>
+    <p>
+      A four pin rocker switch, also from Tinkersphere (click <a href="https://tinkersphere.com/buttons-switches/841-rocker-switch-dpst-4-pin.html" class="class2">here</a> to view).
+    </p>
+    <p>
+      One 6" by 2" and one 6" by 6" bamboo drawer organizer from The Container Store (click <a href="https://www.containerstore.com/s/clearance/stackable-bamboo-drawer-organizers-old/1d?productId=10023938&country=US&currency=USD&utm_source=tcscompshop&utm_medium=feed&utm_campaign=google&cid=cse%7Cevergreen%7Cclearance%7Cgoogle%7C%7C%7Bcampaignid%7D%7C%7Bproduct_id%7D%7C%7Bdevice%7D&gclid=EAIaIQobChMImprip7jL5wIViZyzCh3YrAbzEAQYASABEgL7MPD_BwE" class="class2">here</a> to view).
+    </p>
+    <p>
+      A plant and potting soil from Home Depot's gardening section.
+    </p>
+    <p>
+      Various wires and resistors, all linked back to an Arduino Nano on a solderless breadboard.
+    </p>
+    <h3>Construction</h3>
     <p>
       My plan was to use the plant as part of the clock's control interface, and I decided that I would make the clock so that by touching the plant you could change time or set an alarm. Making the plant-touching work required the use of Arduino's CapSense library, which is phenomenally easy to use. Just by putting a wire into the soil of the plant, I could detect when someone was touching it.
     </p>
@@ -74,6 +84,10 @@
       <source src="../../images/flower11.mp4" type="video/mp4">
       Your browser does not support the video tag.
     </video>
+    <h3>Next Steps</h3>
+    <p>
+      Installation of an LED matrix screen is the next step for this project, since currently the time is only outputted to the computer. Additionally, a better drainage system for the plant would result in a better outcome for the greenery long term, although the design of the clock means that the plant could be easily swapped out as needed. If it were taken commercial, I could easily see different designs on containers with different plants inside each.
+    </p>
 
 
       <address>
