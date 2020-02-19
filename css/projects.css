@@ -43,13 +43,13 @@ ul{
 }
 
 h1{
-  width: 200%;
+  width: 100%;
   color: #FFFFFF;
   font-size: 150%;
 }
 
 h2{
-  width: 200%;
+  width: 500px;
   color: #FFA0A7;
 	/*
   margin-left: 450px;
@@ -60,16 +60,7 @@ h2{
   font-size: 215%;
 }
 
-h3{
-  color: #FFA0A7;
-	/*
-  margin-left: 450px;
-	margin-right: 450px;
-	*/
-	margin: 0 auto;
-  font-family: 'Josefin Slab', sans-serif;
-  font-size: 215%;
-}
+
 
 a.class1 {
   text-decoration: none;
