@@ -17,14 +17,125 @@
 <body>
 
   <h1><a href="intangibleindex.html" class="class1">back</a></h1>
-  <h2>Curious Cube</h2>
+  <h2>Your Field of Stars</h2>
 
   <div class="wrapper">
     <p>
-      as i traveled i became close to different objects
-      when objects change they dont come back
-      it becomes a story between you and the object
+      Your Field of Stars is a 6x6 cube which, when interacted with consistently, will slowly light up into a starry night sky. The cube requies at least ten seconds of touch once per day to light up one of its side, after which a side can't be lit up until the next day. If a day goes by without the cube being interacted with, one of the lit up sides will go dark. Your Field of Stars is something you need to interact with to keep up rapport -- but your interaction with it is constrained, and requires both patience and dedication.
     </p>
+    <h3>Ideation</h3>
+    <p>
+      For a while I lived my life out of a backpack and a carry-on. I liked that sort of life; it wasn't to make a statement or anything, but just because I was always on the move. When I lived like that, each object I owned was something I became intimate with. Of course my phone and my computer were important to me, but every kind of little thing in the constellation of my life took on almost ritual significance: a few coins and a brochure I'd forgotten in a pocket of my bacpack, a candy bar I never got around to eating, a ticket to some museum or temple.
+    </p>
+    <p>
+      Items and objects are not much like people. Most noticeably, any damage done to them is there forever. If you knick your phone or crack your computer case, it won't mend itself like the human body would. Every little scuff and scrape is there forever. It's something that amazes me. As we interact with our environments we leave little traces of Time on it, sometimes imperceptible but always there.
+    </p>
+    <p>
+      After seeing <a href="https://vimeo.com/109974160" class="class2">Slow Games</a> by Ishac Bertran in my class, I knew I wanted to take the idea of time and roll with it. I thought "How can I weave the concept of time into a fun interaction?"
+    </p>
+    <h3>Preparatory Sketches</h3>
+    <p>
+      I wanted to have a cube with some sort of memory, and the first things that came to mind involved audio and visuals, since music and visuals are two of the strongest triggers of memory for me.
+    </p>
+    <p>
+      My early sketches involved a cube that remembered where you had touched it or remembered what kind of environment it was in, and reacted accordingly. However, I didn't think these ideas incorporated the aspect of time as much as I wanted.
+    </p>
+    <img src="../../images/cube2.jpg" alt="A screenshot of Adobe Audition."/>
+    <p>
+      Eventually, I narrowed these down to two ideas. The first was a cube that slowly developed more and more patterns the more you interacted with it over time, and the second was a cube that stored information about what was happening when you interacted with it in terms of environmental aspects like humidity and sound, then replayed those later. Ultimately I went with the first idea, since I thought the concept seemed tighter.
+    </p>
+    <img src="../../images/cube3.jpg" alt="A screenshot of Adobe Audition."/>
+    <h3>Materials</h3>
+    <p>
+      After having gone over fiber optic cable in class, I was struck with the idea of a cube that looked like a field of stars, using fiber optic cables to transmit little pinpoints of light. The final list of the materials I gathered together are as follows:
+    </p>
+    <p>
+      1. 0.75mm fiber optic cables from Amazon.
+    </p>
+    <p>
+      2. 3 sheets of 12x24 inch black opaque acrylic.
+    </p>
+    <p>
+      3. Scraps of wood from the wood shop, for the cube frame.
+    </p>
+    <p>
+      4. Titebond quick n' thick glue, which is amazing and will glue any two things together. I use it all the time and love it (just don't use it on anything load bearing).
+    </p>
+    <p>
+      5. An Arduino Nano 33 IoT as the microcontroller.
+    </p>
+    <p>
+      6. Some aluminum foil for capacitive touch.
+    </p>
+    <p>
+      7. of Adafruit's Neopixels, from the RGB Neopixel strip.
+    </p>
+    <p>
+      8. Various wires and resistors, as necessary.
+    </p>
+    <p>
+      9. Heat shrink tubing, to hold the fiber optics together.
+    </p>
+    <h3>Fabrication</h3>
+    <p>
+      To start off, I had to determine how big I wanted my cube to be. This decision was driven by two factors: what would feel comfortable to put your hands around, and what could comfortably fit my electronics. After doing some measuring I decided that a 6x6 cube would work well for my purposes -- it wasn't too small that you couldn't get any heft, but it wasn't so big as to be unwieldy.
+    </p>
+    <img src="../../images/cube4.jpg" alt="A screenshot of Adobe Audition."/>
+    <p>
+      Once I'd gotten the dimensions down, I had to build a frame for my cube. Since it wasn't anything people were going to be looking at, I built it out of scrap wood I'd found in the wood shop at ITP. I cut down the wood using a miter saw and the belt sander until all my pieces were about one inch thick -- then sanded a little more so that I had some six inch pieces and some 5 inch pieces, so that it'd be six all around when put together. To fasten the frame, I used Titebond and clamped. In the end, I only made a full frame for the bottom, since I thought it wasn't necessary to ring the top completely with wood. This also saved space.
+    </p>
+    <img src="../../images/cube5.jpg" alt="A screenshot of Adobe Audition."/>
+    <img src="../../images/cube6.jpg" alt="A screenshot of Adobe Audition."/>
+    <img src="../../images/cube7.jpg" alt="A screenshot of Adobe Audition."/>
+    <img src="../../images/cube8.jpg" alt="A screenshot of Adobe Audition."/>
+    <p>
+      For the paneling of the cube, I settled on black opaque acrylic; I don't normally like using acrylic, but this was the best I could do to get the impression of the blackness of space. Before anything else, I tested that I could drill a hole small enough to tightly fit through a strand of my fiber optic cable. A 0.7mm hole seemed to work, though there was a bit of wiggle room.
+    </p>
+    <img src="../../images/cube10.jpg" alt="A screenshot of Adobe Audition."/>
+    <p>
+      I made an Adobe Illustrator file for the laser cutter with the pattern of stars I wanted on the cube. Obviously they couldn't all be 6x6 or they wouldn't fit together, so I made a few with a 1/8 tolerance, since I was using a 1/16 inch thick acrylic sheet.
+    </p>
+    <img src="../../images/cube9.jpg" alt="A screenshot of Adobe Audition."/>
+    <img src="../../images/cube12.jpg" alt="A screenshot of Adobe Audition."/>
+    <p>
+      The most time-consuming part of the process, by far, was attaching the fiber optic cables to the acrylic sheets. The holes were not quite small enough to friction fit, so I ended up having to glue them all on. This was... 100 fiber optic cables to glue, and it ended up being a huge pain. However, they all stayed on well enough for the intial fitting.
+    </p>
+    <img src="../../images/cube13.jpg" alt="A screenshot of Adobe Audition."/>
+    <img src="../../images/cube14.jpg" alt="A screenshot of Adobe Audition."/>
+    <p>
+      Since I wanted each side to light up differently, I knew I'd have to control them from a different LED -- this meant five LEDs in total. I opted for Adafruit's Neopixel LEDs, since they are individually addressable, but that still left me with a problem -- how do I attach 20 fiber optic cables to one tiny LED that's not even a quarter of the inch wide? The answer was heat shrink tubing.
+    </p>
+    <p>
+      Using heat shrink tubing, I was able to get the fiber optic cables condensed into a small space. I then drilled five holes through a small piece of wood and taped the LEDs in the LED strip around the wood. Then, I could friction fit the heat shrink tubing with the fiber optics inside into the wood and right on top of the LEDs. Just to be safe, I glued the tuubing to the wood to make sure it didn't move around too much.
+    </p>
+    <img src="../../images/cube15.jpg" alt="A screenshot of Adobe Audition."/>
+    <img src="../../images/cube16.jpg" alt="A screenshot of Adobe Audition."/>
+    <img src="../../images/cube17.jpg" alt="A screenshot of Adobe Audition."/>
+    <p>
+      The only thing left to implement before putting it all together was... the actual interaction! The cube uses capacitive touch to sense when someone is holding it. To get that working was very simple: I taped aluminum foil with a wire inside it to the side of the cube. Capacitive touch is my favorite thing to work with because it works even in really DIY conditions, like aluminum foil taped to the inside of a plastic cube. I was worried it wouldn't be able to sense touch through the plastic, but it totally could.
+    </p>
+    <img src="../../images/cube18.jpg" alt="A screenshot of Adobe Audition."/>
+    <p>
+      Last step was gluing it all together. If I were to do it again and make it completely permanent I'd use black screws with threaded inserts most likely, but because I needed to get my Arduino back after I settled for glue.
+    </p>
+    <img src="../../images/cube19.jpg" alt="A screenshot of Adobe Audition."/>
+    <img src="../../images/cube20.jpg" alt="A screenshot of Adobe Audition."/>
+    <img src="../../images/cube21.jpg" alt="A screenshot of Adobe Audition."/>
+    <h3>Computation</h3>
+    <p>
+      All code is on GitHub, found by clicking <a href="https://github.com/lazordiak/Your-Field-of-Stars" class="class3">here</a>.
+    </p>
+    <p>
+      As stated above, the goal was to build something that required consistent, time-constrained interaction. The method of interaction was through capacitive touch, which I programmed using the capsense library for Arduino -- it's very easy to use and always works very well!
+    </p>
+    <p>
+      For keeping track of the time I used the time library, where each time the cube turned on it would start recording minutes, hours and days. I programmed the cube to, when someone touched it for ten seconds at a time, light up a side -- but this could only be done once every day. The cube would keep track of whether it was touched each day, and if a day passed without it being touched at all, one of the sides would dim again.
+    </p>
+    <h3>Final Video</h3>
+    <p>
+      A video of the cube can be found by clicking the link below. In order to facilitate a video where one can see multiple sides lighting up, I changed the code so that the side would light up once per minute instead of once per day.
+    </p>
+    <iframe src="https://player.vimeo.com/video/398716074" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
 
       <address>
         Comments? Questions? Concerns? Email me
