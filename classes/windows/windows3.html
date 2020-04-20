@@ -20,6 +20,12 @@
   <h2>ARduino</h2>
 
   <div class="wrapper">
+    <video width="600" height="600" controls>
+      <source src="../../images/arduinovid.mp4" type="video/avi">
+      Your browser does not support the video tag.
+    </video>
+    <img src="../../images/ARduino.png" alt="A screenshot of Adobe Audition."/>
+    <img src="../../images/ARduino1.jpg" alt="A screenshot of Adobe Audition."/>
     <p>
       This week's theme is "image augmentation" -- using the power of mixed reality to help improve our interactions with the objects we use. There was a distinction drawn in the last class that I found really interesting and wanted to investigate further, that the digital and physical worlds excel at separate things. The digital world is very good at coding, breaking down complex things, getting into bits and bytes and the nitty gritty. The physical world is where we live, and it's home to intuitive, big human gestures like touch and verbal language and the personality we associate with those things. The notion that AR is best served when the digital does what the digital is good at and the physical does what the physical is good at was appealing to me, and something I wanted to explore more.
     </p>
@@ -39,12 +45,6 @@
     <p>
       2. Raycasting. This confused me so much, and I know I'll have to review it a bit more to actually get it down. The problem I encountered was that my raycasting was firing once for the first hit, but never fired again after that. The problem, as I eventually realized, was in the example code. The raycast was being set to a new position every time it cast. I fixed that and it worked, and the touch worked, and it all worked fine!
     </p>
-    <img src="../../images/ARduino.png" alt="A screenshot of Adobe Audition."/>
-    <img src="../../images/ARduino1.jpg" alt="A screenshot of Adobe Audition."/>
-    <video width="600" height="600" controls>
-      <source src="../../images/arduinovid.mp4" type="video/avi">
-      Your browser does not support the video tag.
-    </video>
     <h3>Next Steps</h3>
     <p>
       The UI definitely needs some work. The text is currently too big, and it's hard to tell which pin is associated with which text. It'd look a bit better if the text were smaller and cast a line to a specific pin, which is actually completely doable and something I'll look into.
