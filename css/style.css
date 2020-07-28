@@ -35,8 +35,7 @@ a{
   -moz-transition: 0.5s;
   -webkit-transition: 0.5s;
   /* ...and now for the proper property */
-  transition: 0.5s;
-	transition-delay: 0.5s;
+  transition: 1.0s;
 }
 
 a:hover{
