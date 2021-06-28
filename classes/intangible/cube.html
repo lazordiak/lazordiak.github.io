@@ -22,33 +22,33 @@
   <div class="wrapper">
     <iframe src="https://player.vimeo.com/video/398716074" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
     <p>
-      Your Field of Stars is a 6x6 cube which, when interacted with consistently, will slowly light up into a starry night sky. The cube requies at least ten seconds of touch once per day to light up one of its side, after which a side can't be lit up until the next day. If a day goes by without the cube being interacted with, one of the lit up sides will go dark. Your Field of Stars is something you need to interact with to keep up rapport -- but your interaction with it is constrained, and requires both patience and dedication.
+      Your Field of Stars is a 6x6 cube which, when interacted with consistently, will slowly transform into a starry night sky. The cube requies at least ten seconds of touch once per day to light up one of its sides, after which no other side can be lit up until the next day. On the other hand, if a day goes by and the cube has not been interacted with at all, one of the lit sides, assuming there are any, will go dark. Your Field of Stars is something you need to interact with to keep up rapport -- at the same time, though, your interaction with it is constrained, and requires both patience and dedication.
     </p>
     <h3>Ideation</h3>
     <p>
-      For a while I lived my life out of a backpack and a carry-on. I liked that sort of life; it wasn't to make a statement or anything, but just because I was always on the move. When I lived like that, each object I owned was something I became intimate with. Of course my phone and my computer were important to me, but every kind of little thing in the constellation of my life took on almost ritual significance: a few coins and a brochure I'd forgotten in a pocket of my bacpack, a candy bar I never got around to eating, a ticket to some museum or temple.
+      For a time I lived my life out of a backpack. I liked that sort of life; I didn't live that way to make a statement or anything, just because I was always on the move. At that point in time, each object I owned was something I became intimate with. My phone and my computer were, of course, important to me, but every other little thing in the constellation of my life took on an almost ritual significance: a few coins and a brochure I'd forgotten in a pocket of my bacpack, a candy bar I never got around to eating, a ticket to some museum or temple.
     </p>
     <p>
-      Items and objects are not much like people. Most noticeably, any damage done to them is there forever. If you knick your phone or crack your computer case, it won't mend itself like the human body would. Every little scuff and scrape is there forever. It's something that amazes me. As we interact with our environments we leave little traces of Time on it, sometimes imperceptible but always there.
+      Items and objects are not much like people. Most noticeably, any damage done to them is there forever. If you knick your phone or crack your computer case, it won't mend itself like the human body would. Every little scuff and scrape is there indeliby. It's something that amazes me. As we interact with our environments, we leave little traces of ourselves on it, sometimes imperceptible but always there.
     </p>
     <p>
-      After seeing <a href="https://vimeo.com/109974160" class="class2">Slow Games</a> by Ishac Bertran in my class, I knew I wanted to take the idea of time and roll with it. I thought "How can I weave the concept of time into a fun interaction?"
+      After seeing <a href="https://vimeo.com/109974160" class="class2">Slow Games</a> by Ishac Bertran for the first time, I decided I wanted to transform this idea into some sort of rewarding interaction.
     </p>
     <h3>Preparatory Sketches</h3>
     <p>
-      I wanted to have a cube with some sort of memory, and the first things that came to mind involved audio and visuals, since music and visuals are two of the strongest triggers of memory for me.
+      The first pitch for this project was "a cube with memory", and the initial sketches worked with music and visuals, since I've found those to be the strongest triggers for memory.
     </p>
     <p>
-      My early sketches involved a cube that remembered where you had touched it or remembered what kind of environment it was in, and reacted accordingly. However, I didn't think these ideas incorporated the aspect of time as much as I wanted.
+      These early sketches were of a cube that remembered where you had touched it or remembered what kind of environment it was in, and reacted accordingly. However, these suffered from technical limitations; there were just too many variables to control for, to the extent that the hardware required would have become bloated.
     </p>
     <img src="../../images/cube2.jpg" alt="A screenshot of Adobe Audition."/>
     <p>
-      Eventually, I narrowed these down to two ideas. The first was a cube that slowly developed more and more patterns the more you interacted with it over time, and the second was a cube that stored information about what was happening when you interacted with it in terms of environmental aspects like humidity and sound, then replayed those later. Ultimately I went with the first idea, since I thought the concept seemed tighter.
+      Eventually, I narrowed the scope of the project down to two ideas. The first was a cube that slowly developed more and more patterns the more you interacted with it over time. The second was a cube that stored sound when you interacted with it, then replayed those later. Ultimately I went with the first idea, since I thought the concept seemed tighter.
     </p>
     <img src="../../images/cube3.jpg" alt="A screenshot of Adobe Audition."/>
     <h3>Materials</h3>
     <p>
-      After having gone over fiber optic cable in class, I was struck with the idea of a cube that looked like a field of stars, using fiber optic cables to transmit little pinpoints of light. The final list of the materials I gathered together are as follows:
+      After having gone over how to incorporate fiber optic cables into projects during class, I was struck with the idea of a cube that looked like a field of stars, which would use fiber optic cables to transmit little pinpoints of light. This is the final list of materials used in the construction of the cube:
     </p>
     <p>
       1. 0.75mm fiber optic cables from Amazon.
@@ -60,16 +60,16 @@
       3. Scraps of wood from the wood shop, for the cube frame.
     </p>
     <p>
-      4. Titebond quick n' thick glue, which is amazing and will glue any two things together. I use it all the time and love it (just don't use it on anything load bearing).
+      4. Titebond quick n' thick glue, which is my go-to adhesive. I use it all the time and love it (just don't use it on anything load bearing).
     </p>
     <p>
       5. An Arduino Nano 33 IoT as the microcontroller.
     </p>
     <p>
-      6. Some aluminum foil for capacitive touch.
+      6. Aluminum foil for capacitive touch.
     </p>
     <p>
-      7. of Adafruit's Neopixels, from the RGB Neopixel strip.
+      7. Adafruit's Neopixels, from the RGB Neopixel strip.
     </p>
     <p>
       8. Various wires and resistors, as necessary.
@@ -79,7 +79,7 @@
     </p>
     <h3>Fabrication</h3>
     <p>
-      To start off, I had to determine how big I wanted my cube to be. This decision was driven by two factors: what would feel comfortable to put your hands around, and what could comfortably fit my electronics. After doing some measuring I decided that a 6x6 cube would work well for my purposes -- it wasn't too small that you couldn't get any heft, but it wasn't so big as to be unwieldy.
+      To start, I had to determine how big I wanted my cube to be. This decision was driven by two factors: what would feel comfortable to put your hands around, and what could comfortably fit my electronics. After some measuring I settled on 6x6 inches for the dimensions of the cube, since it was big enough to feel solid, but not big enough to be unwieldy.
     </p>
     <img src="../../images/cube4.jpg" alt="A screenshot of Adobe Audition."/>
     <p>
