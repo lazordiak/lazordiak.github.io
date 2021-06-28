@@ -83,41 +83,41 @@
     </p>
     <img src="../../images/cube4.jpg" alt="A screenshot of Adobe Audition."/>
     <p>
-      Once I'd gotten the dimensions down, I had to build a frame for my cube. Since it wasn't anything people were going to be looking at, I built it out of scrap wood I'd found in the wood shop at ITP. I cut down the wood using a miter saw and the belt sander until all my pieces were about one inch thick -- then sanded a little more so that I had some six inch pieces and some 5 inch pieces, so that it'd be six all around when put together. To fasten the frame, I used Titebond and clamped. In the end, I only made a full frame for the bottom, since I thought it wasn't necessary to ring the top completely with wood. This also saved space.
+      Since the frame of the cube wouldn't be visible, it was built from scrap wood. The wood was cut and sanded into pieces an inch thick, and fastened together with Titebond. Only the bottom of the cube uses a full frame, since this saves space and material.
     </p>
     <img src="../../images/cube5.jpg" alt="A screenshot of Adobe Audition."/>
     <img src="../../images/cube6.jpg" alt="A screenshot of Adobe Audition."/>
     <img src="../../images/cube7.jpg" alt="A screenshot of Adobe Audition."/>
     <img src="../../images/cube8.jpg" alt="A screenshot of Adobe Audition."/>
     <p>
-      For the paneling of the cube, I settled on black opaque acrylic; I don't normally like using acrylic, but this was the best I could do to get the impression of the blackness of space. Before anything else, I tested that I could drill a hole small enough to tightly fit through a strand of my fiber optic cable. A 0.7mm hole seemed to work, though there was a bit of wiggle room.
+      For the paneling of the cube, I settled on black opaque acrylic with a depth of 1/16th of an inch. I try to avoid using acrylic due to environmental concerns, but this was the best I could do to get the impression of the blackness of space. To begin with, I tested that I could drill a hole small enough to tightly fit through a strand of my fiber optic cable. A 0.7mm hole worked well.
     </p>
     <img src="../../images/cube10.jpg" alt="A screenshot of Adobe Audition."/>
     <p>
-      I made an Adobe Illustrator file for the laser cutter with the pattern of stars I wanted on the cube. Obviously they couldn't all be 6x6 or they wouldn't fit together, so I made a few with a 1/8 tolerance, since I was using a 1/16 inch thick acrylic sheet.
+      I made an Adobe Illustrator file for the laser cutter with the pattern of stars I wanted on the cube. The panels couldn't all be 6x6 or else they wouldn't fit together, so I made a few with a 1/8 inch tolerance.
     </p>
     <img src="../../images/cube9.jpg" alt="A screenshot of Adobe Audition."/>
     <img src="../../images/cube12.jpg" alt="A screenshot of Adobe Audition."/>
     <p>
-      The most time-consuming part of the process, by far, was attaching the fiber optic cables to the acrylic sheets. The holes were not quite small enough to friction fit, so I ended up having to glue them all on. This was... 100 fiber optic cables to glue, and it ended up being a huge pain. However, they all stayed on well enough for the intial fitting.
+      The most time-consuming part of the process, by far, was attaching the fiber optic cables to the acrylic sheets. The holes, though they were the smallest I could have made, were not small enough to keep the fiber optic cables in with friction, so I ended up having to glue them all on. Though it was very time-consuming, the final result was acceptable.
     </p>
     <img src="../../images/cube13.jpg" alt="A screenshot of Adobe Audition."/>
     <img src="../../images/cube14.jpg" alt="A screenshot of Adobe Audition."/>
     <p>
-      Since I wanted each side to light up differently, I knew I'd have to control them from a different LED -- this meant five LEDs in total. I opted for Adafruit's Neopixel LEDs, since they are individually addressable, but that still left me with a problem -- how do I attach 20 fiber optic cables to one tiny LED that's not even a quarter of the inch wide? The answer was heat shrink tubing.
+      With the structure of the cube finished, lighting the cube was next. Since I wanted each side to light up differently, I knew I'd have to control them from a different LED, which meant at least five LEDs total. I opted for Adafruit's Neopixel LEDs, since they are individually addressable, but this still left me with a problem -- how do I attach 20 fiber optic cables to one tiny LED that's not even a quarter of the inch wide? The answer was heat shrink tubing.
     </p>
     <p>
-      Using heat shrink tubing, I was able to get the fiber optic cables condensed into a small space. I then drilled five holes through a small piece of wood and taped the LEDs in the LED strip around the wood. Then, I could friction fit the heat shrink tubing with the fiber optics inside into the wood and right on top of the LEDs. Just to be safe, I glued the tuubing to the wood to make sure it didn't move around too much.
+      Using heat shrink tubing, I was able to get the fiber optic cables condensed into a small space. I then drilled five holes through a small piece of wood and taped the LEDs in the LED strip around the wood. After this, I could fit the heat shrink tubing with the fiber optics inside a wooden mount I had made.
     </p>
     <img src="../../images/cube15.jpg" alt="A screenshot of Adobe Audition."/>
     <img src="../../images/cube16.jpg" alt="A screenshot of Adobe Audition."/>
     <img src="../../images/cube17.jpg" alt="A screenshot of Adobe Audition."/>
     <p>
-      The only thing left to implement before putting it all together was... the actual interaction! The cube uses capacitive touch to sense when someone is holding it. To get that working was very simple: I taped aluminum foil with a wire inside it to the side of the cube. Capacitive touch is my favorite thing to work with because it works even in really DIY conditions, like aluminum foil taped to the inside of a plastic cube. I was worried it wouldn't be able to sense touch through the plastic, but it totally could.
+      This was the final step for the hardware, and it was after this that I designed the cube's interactions. The cube uses capacitive touch to sense when someone is holding it. To get that working was very simple: aluminum foil connected to a wire running through to the microncotroller was easy to rig up. Capacitive touch is my favorite thing to work with because it is easy to make it function even in low-tech, low-time situations, like aluminum foil taped to the inside of a plastic cube. I was worried it wouldn't be able to sense touch through the plastic, but it worked completely fine.
     </p>
     <img src="../../images/cube18.jpg" alt="A screenshot of Adobe Audition."/>
     <p>
-      Last step was gluing it all together. If I were to do it again and make it completely permanent I'd use black screws with threaded inserts most likely, but because I needed to get my Arduino back after I settled for glue.
+      The final step was to make sure everything was glued together. For the next version of this project, I'd switch to using black screws with threaded inserts instead of glue.
     </p>
     <img src="../../images/cube19.jpg" alt="A screenshot of Adobe Audition."/>
     <img src="../../images/cube20.jpg" alt="A screenshot of Adobe Audition."/>
@@ -127,10 +127,10 @@
       All code is on GitHub, found by clicking <a href="https://github.com/lazordiak/Your-Field-of-Stars" class="class3">here</a>.
     </p>
     <p>
-      As stated above, the goal was to build something that required consistent, time-constrained interaction. The method of interaction was through capacitive touch, which I programmed using the capsense library for Arduino -- it's very easy to use and always works very well!
+      As stated above, the goal was to build something that required consistent, time-constrained interaction. The method of interaction was through capacitive touch, which I programmed using the capsense library for Arduino: it's a very easy library to use and has always served me well!
     </p>
     <p>
-      For keeping track of the time I used the time library, where each time the cube turned on it would start recording minutes, hours and days. I programmed the cube to, when someone touched it for ten seconds at a time, light up a side -- but this could only be done once every day. The cube would keep track of whether it was touched each day, and if a day passed without it being touched at all, one of the sides would dim again.
+      For keeping track of time I used the time library that Paul Stoffregen designed. When the cube is turned on it starts recording minutes, hours and days. When someone touches the cube for ten seconds at a time, it's programmed to light up a side, but this can only be done once every day. The cube keeps track of whether it was touched each day, and if a day passes without it being touched at all, one of its lit sides dims again.
     </p>
     <h3>Final Video</h3>
     <p>
